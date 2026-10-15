@@ -1,0 +1,14 @@
+(version 1)
+(rule ISO_DISTANCE
+   (
+	constraint clearance (min 1.2mm)
+	)
+   (condition "A.NetClass == 'Earth' && B.NetClass == 'GND'")
+)
+(rule ISO_DISTANCE2
+   (
+	constraint clearance (min 1.2mm)
+	)
+   (condition "A.NetClass == 'Earth' && B.NetClass == 'VCC'")
+)
+
